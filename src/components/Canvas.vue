@@ -45,6 +45,10 @@
                 @suck_a_sage </a
               >の許可をとって使用しています。
             </p>
+            <p class="text-center text-body-2 py-2">
+              作成者 :
+              <a href="https://x.com/dhs_1212" target="_blank"> @dhs_1212 </a>
+            </p>
           </v-col>
         </v-row>
       </v-col>
