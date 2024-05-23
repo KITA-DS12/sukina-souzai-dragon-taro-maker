@@ -7,18 +7,8 @@
             <p class="text-h5 text-center py-2">好きな惣菜発表ドラゴン太郎</p>
           </v-card-title>
           <v-card-text>
-            <v-textarea
-              v-model="text"
-              rows="3"
-              variant="outlined"
-              label="ここにテキストを入力"
-            ></v-textarea>
-            <v-select
-              v-model="fontSize"
-              :items="[8, 16, 32, 48, 64]"
-              label="フォントサイズ"
-              class="my-4"
-            ></v-select>
+            <v-textarea v-model="text" rows="3" variant="outlined" label="ここにテキストを入力"></v-textarea>
+            <v-select v-model="fontSize" :items="[8, 16, 32, 48, 64]" label="フォントサイズ" class="my-4"></v-select>
             <v-row justify="center">
               <v-btn @click="downloadImage" color="black" class="my-2">
                 画像をダウンロード
@@ -35,15 +25,10 @@
           <v-col cols="12">
             <p class="text-center text-body-2">
               素材元:
-              <a
-                href="https://x.com/suck_a_sage/status/1793579307203440808"
-                target="_blank"
-              >
-                https://x.com/suck_a_sage/status/1793579307203440808 </a
-              ><br />
+              <a href="https://x.com/suck_a_sage/status/1793579307203440808" target="_blank">
+                https://x.com/suck_a_sage/status/1793579307203440808 </a><br />
               <a href="https://x.com/suck_a_sage" target="_brank">
-                @suck_a_sage </a
-              >の許可をとって使用しています。
+                @suck_a_sage </a>の許可をとって使用しています。
             </p>
             <p class="text-center text-body-2 py-2">
               作成者 :
@@ -67,7 +52,7 @@ const drawText = () => {
   if (!canvas.value) return;
   const ctx = canvas.value.getContext("2d");
   const image = new Image();
-  image.src = "/template.jpeg";
+  image.src = "/sukina-souzai-dragon-taro-maker/template.jpeg";
 
   image.onload = () => {
     if (ctx) {
